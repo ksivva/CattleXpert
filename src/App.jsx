@@ -36,7 +36,7 @@ export default function App() {
   const screens = {
     details: (
       <div className="screen">
-        <img src="/new-logo.jpeg" alt="Logo" className="logo" />
+        <img src="/CattleXpert/new-logo.jpeg" alt="Logo" className="logo" />
         <h2>Animal Details</h2>
         <div className="details-container">
           <div className="detail-row">
@@ -88,7 +88,7 @@ export default function App() {
     ),
     home: (
       <div className="screen">
-        <img src="/new-logo.jpeg" alt="Logo" className="logo" />
+        <img src="/CattleXpert/new-logo.jpeg" alt="Logo" className="logo" />
         <div className="header">
           <h2>Today's Pickups</h2>
           <span className="date">{new Date().toLocaleDateString()}</span>
@@ -113,7 +113,7 @@ export default function App() {
     ),
     pickup: (
       <div className="screen">
-        <img src="/new-logo.jpeg" alt="Logo" className="logo" />
+        <img src="/CattleXpert/new-logo.jpeg" alt="Logo" className="logo" />
         <input 
           type="date"
           defaultValue={new Date().toISOString().split('T')[0]}
@@ -162,7 +162,7 @@ export default function App() {
           })
           setCurrentScreen('pickup')
         }}>
-          <img src="/new-logo.jpeg" alt="Logo" className="logo" />
+          <img src="/CattleXpert/new-logo.jpeg" alt="Logo" className="logo" />
           <h2>Animal Info</h2>
           <div className="form-group">
             <input name="eid" placeholder="Animal EID" />
