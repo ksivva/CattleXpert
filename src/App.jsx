@@ -170,9 +170,9 @@ export default function App() {
           </div>
           <input name="visualTag" placeholder="Visual Tag" />
           <select name="gender">
-            <option>Gender</option>
-            <option>Male</option>
-            <option>Female</option>
+            <option value="">Gender</option>
+            <option value="Bull">Bull</option>
+            <option value="Heifer">Heifer</option>
           </select>
           <select name="damBreed">
             <option value="">Dam Breed</option>
@@ -195,14 +195,15 @@ export default function App() {
             name="weight" 
             placeholder="Weight (lbs)"
           />
-          <div className="date-field">
+          <div className="date-field-row">
             <label>Date of Birth</label>
             <input 
               type="date" 
               name="dateOfBirth"
+              defaultValue={new Date().toISOString().split('T')[0]}
             />
           </div>
-          <div className="date-field">
+          <div className="date-field-row">
             <label>Arrival Date</label>
             <input 
               type="date" 
@@ -221,6 +222,10 @@ export default function App() {
             <option value="true">Yes</option>
             <option value="false">No</option>
           </select>
+          <div className="form-group">
+            <input name="serum" placeholder="Serum" />
+            <button type="button">EID</button>
+          </div>
           <div className="nav-buttons">
             <button type="button" onClick={() => setCurrentScreen('pickup')}>Back</button>
             <button type="submit">Save</button>
